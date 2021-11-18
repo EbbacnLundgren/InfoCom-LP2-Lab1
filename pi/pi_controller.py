@@ -14,7 +14,7 @@ def get_direction():
     #if c == '\x1b[D' or c =='a':
     while true:
         for event in sense.stick.get_event():
-            if event.direction == "left":
+            if event.direction == "left"
                 print(event.direction, event.action)
         #click.echo('Left')
         send_vel = True
