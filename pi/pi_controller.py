@@ -12,7 +12,7 @@ def get_direction():
     send_vel = False
     #c = click.getchar()
     #if c == '\x1b[D' or c =='a':
-    while true:
+    while True:
         for event in sense.stick.get_event():
             if event.direction == "left":
                 print(event.direction, event.action)
