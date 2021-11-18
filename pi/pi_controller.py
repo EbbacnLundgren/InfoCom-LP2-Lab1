@@ -17,35 +17,35 @@ def get_direction():
             if event.direction == "left":
                 print(event.direction, event.action)
         #click.echo('Left')
-        send_vel = True
-        d_long = -1
-        d_la = 0
+                send_vel = True
+                d_long = -1
+                d_la = 0
     #elif c == '\x1b[C' or c == 'd':
         #click.echo('Right')
-    elif event.direction == "right":
-        print(event.direction, event.action)
-        send_vel = True
-        d_long = 1
-        d_la = 0
+            elif event.direction == "right":
+                print(event.direction, event.action)
+                send_vel = True
+                d_long = 1
+                d_la = 0
     #elif c == '\x1b[A' or c =='w':
         #click.echo('Up')
-    elif event.direction == "up":
-        print(event.direction, event.action)
-        send_vel = True
-        d_long = 0
-        d_la = 1
+            elif event.direction == "up":
+                print(event.direction, event.action)
+                send_vel = True
+                d_long = 0
+                d_la = 1
     #elif c == '\x1b[B' or c == 's':
         #click.echo('Down')
-    elif event.direction == "down":
-        print(event.direction, event.action)
-        send_vel = True
-        d_long = 0
-        d_la = -1
-    else:
-        d_long = 0
-        d_la = 0
-        click.echo('Invalid input :(')
-        send_vel = False
+            elif event.direction == "down":
+                print(event.direction, event.action)
+                send_vel = True
+                d_long = 0
+                d_la = -1
+            else:
+                d_long = 0
+                d_la = 0
+                click.echo('Invalid input :(')
+                send_vel = False
     return d_long, d_la, send_vel
 
 
